@@ -113,6 +113,18 @@
 		3E2FA3C71BD3E44100830B92 /* ALManagedObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3BF1BD3E44100830B92 /* ALManagedObjectFactory.m */; settings = {ASSET_TAGS = (); }; };
 		3E2FA3C81BD3E44100830B92 /* ALManagedObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3BF1BD3E44100830B92 /* ALManagedObjectFactory.m */; settings = {ASSET_TAGS = (); }; };
 		3E2FA3D01BD3E74800830B92 /* ALManagedObjectFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E2FA3BE1BD3E44100830B92 /* ALManagedObjectFactory.h */; };
+		3E2FA3D41BD3F03E00830B92 /* QueryBuilder.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3D51BD3F03F00830B92 /* QueryBuilder.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3D61BD3F04000830B92 /* QueryBuilder.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3D71BD3F04000830B92 /* QueryBuilder.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E11BD3F1C600830B92 /* _EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E21BD3F1C700830B92 /* _EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E31BD3F1C800830B92 /* _EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E41BD3F1CA00830B92 /* _EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E71BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E81BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3E91BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3E2FA3EA1BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */; settings = {ASSET_TAGS = (); }; };
 		581ECBF7187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */; };
 		581ECBF8187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */; };
 		581ECBF9187F663100084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 581ECBEB187F63FF00084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m */; };
@@ -688,6 +700,11 @@
 		3E2FA3B71BD3DEDC00830B92 /* MRQueryBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRQueryBuilderTests.m; path = Tests/QueryBuilder/MRQueryBuilderTests.m; sourceTree = SOURCE_ROOT; };
 		3E2FA3BE1BD3E44100830B92 /* ALManagedObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALManagedObjectFactory.h; path = MagicalRecord/Factory/ALManagedObjectFactory.h; sourceTree = SOURCE_ROOT; };
 		3E2FA3BF1BD3E44100830B92 /* ALManagedObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALManagedObjectFactory.m; path = MagicalRecord/Factory/ALManagedObjectFactory.m; sourceTree = SOURCE_ROOT; };
+		3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = QueryBuilder.json; path = Fixtures/QueryBuilder.json; sourceTree = "<group>"; };
+		3E2FA3D81BD3F1BA00830B92 /* _EntityForQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _EntityForQueryBuilder.h; sourceTree = "<group>"; };
+		3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _EntityForQueryBuilder.m; sourceTree = "<group>"; };
+		3E2FA3E51BD3F63F00830B92 /* EntityForQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityForQueryBuilder.h; sourceTree = "<group>"; };
+		3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityForQueryBuilder.m; sourceTree = "<group>"; };
 		581ECBEB187F63FF00084FEE /* ImportMultipleEntitiesWithNoPrimaryKeyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportMultipleEntitiesWithNoPrimaryKeyTests.m; sourceTree = "<group>"; };
 		581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MultipleEntitiesWithNoPrimaryKey.json; path = Fixtures/MultipleEntitiesWithNoPrimaryKey.json; sourceTree = "<group>"; };
 		9004F5211A94CBCF00A61312 /* MagicalRecord for iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MagicalRecord for iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1009,6 +1026,8 @@
 				9099492017C2F42100BC2B5C /* _SingleEntityWithNoRelationships.m */,
 				9099492117C2F42100BC2B5C /* _SingleRelatedEntity.h */,
 				9099492217C2F42100BC2B5C /* _SingleRelatedEntity.m */,
+				3E2FA3D81BD3F1BA00830B92 /* _EntityForQueryBuilder.h */,
+				3E2FA3D91BD3F1BA00830B92 /* _EntityForQueryBuilder.m */,
 				9099492317C2F42100BC2B5C /* AbstractRelatedEntity.h */,
 				9099492417C2F42100BC2B5C /* AbstractRelatedEntity.m */,
 				9099492517C2F42100BC2B5C /* ConcreteRelatedEntity.h */,
@@ -1033,6 +1052,8 @@
 				9099493617C2F42100BC2B5C /* SingleEntityWithNoRelationships.m */,
 				9099493717C2F42100BC2B5C /* SingleRelatedEntity.h */,
 				9099493817C2F42100BC2B5C /* SingleRelatedEntity.m */,
+				3E2FA3E51BD3F63F00830B92 /* EntityForQueryBuilder.h */,
+				3E2FA3E61BD3F63F00830B92 /* EntityForQueryBuilder.m */,
 			);
 			name = TestModel;
 			path = Fixtures/TestModel;
@@ -1118,6 +1139,7 @@
 				581ECBF6187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json */,
 				C7CF9B5117498985008D9D13 /* SingleEntityWithNoRelationships.plist */,
 				C7CF9B5217498985008D9D13 /* SingleRelatedEntity.json */,
+				3E2FA3D11BD3F02F00830B92 /* QueryBuilder.json */,
 			);
 			name = "Sample Data Files";
 			sourceTree = "<group>";
@@ -1654,6 +1676,7 @@
 				9004F5121A94CBCF00A61312 /* TestModel.xcdatamodeld in Resources */,
 				9004F5131A94CBCF00A61312 /* SampleJSONDataForImport.json in Resources */,
 				9004F5141A94CBCF00A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingListOfPrimaryKeys.json in Resources */,
+				3E2FA3D41BD3F03E00830B92 /* QueryBuilder.json in Resources */,
 				9004F5151A94CBCF00A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.json in Resources */,
 				9004F5161A94CBCF00A61312 /* MultipleEntitiesWithNoPrimaryKey.json in Resources */,
 				9004F5171A94CBCF00A61312 /* SingleEntityRelatedToMappedEntityUsingDefaults.json in Resources */,
@@ -1673,6 +1696,7 @@
 				9004F5571A94CBF900A61312 /* TestModel.xcdatamodeld in Resources */,
 				9004F5581A94CBF900A61312 /* SampleJSONDataForImport.json in Resources */,
 				9004F5591A94CBF900A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingListOfPrimaryKeys.json in Resources */,
+				3E2FA3D51BD3F03F00830B92 /* QueryBuilder.json in Resources */,
 				9004F55A1A94CBF900A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.json in Resources */,
 				9004F55B1A94CBF900A61312 /* MultipleEntitiesWithNoPrimaryKey.json in Resources */,
 				9004F55C1A94CBF900A61312 /* SingleEntityRelatedToMappedEntityUsingDefaults.json in Resources */,
@@ -1706,6 +1730,7 @@
 				90171E1D17C32ACE00E7084A /* TestModel.xcdatamodeld in Resources */,
 				C7CF9B5317498985008D9D13 /* SampleJSONDataForImport.json in Resources */,
 				C7CF9B5517498985008D9D13 /* SingleEntityRelatedToManyMappedEntitiesUsingListOfPrimaryKeys.json in Resources */,
+				3E2FA3D61BD3F04000830B92 /* QueryBuilder.json in Resources */,
 				C7CF9B5717498985008D9D13 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.json in Resources */,
 				581ECBF7187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */,
 				C7CF9B5917498985008D9D13 /* SingleEntityRelatedToMappedEntityUsingDefaults.json in Resources */,
@@ -1725,6 +1750,7 @@
 				90171E1E17C32AD300E7084A /* TestModel.xcdatamodeld in Resources */,
 				C7CF9B5417498985008D9D13 /* SampleJSONDataForImport.json in Resources */,
 				C7CF9B5617498985008D9D13 /* SingleEntityRelatedToManyMappedEntitiesUsingListOfPrimaryKeys.json in Resources */,
+				3E2FA3D71BD3F04000830B92 /* QueryBuilder.json in Resources */,
 				C7CF9B5817498985008D9D13 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.json in Resources */,
 				581ECBF8187F660B00084FEE /* MultipleEntitiesWithNoPrimaryKey.json in Resources */,
 				C7CF9B5A17498985008D9D13 /* SingleEntityRelatedToMappedEntityUsingDefaults.json in Resources */,
@@ -1779,6 +1805,7 @@
 				9004F5001A94CBCF00A61312 /* NSManagedObjectContext+MagicalSavesTests.m in Sources */,
 				9004F5011A94CBCF00A61312 /* SingleEntityRelatedToMappedEntityUsingDefaults.m in Sources */,
 				9004F5021A94CBCF00A61312 /* _SingleEntityRelatedToMappedEntityUsingMappedPrimaryKey.m in Sources */,
+				3E2FA3E71BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */,
 				9004F5031A94CBCF00A61312 /* ImportSingleRelatedEntityTests.m in Sources */,
 				9004F5041A94CBCF00A61312 /* MagicalRecord+ActionsTests.m in Sources */,
 				9004F5051A94CBCF00A61312 /* NSManagedObject+MagicalRecordTests.m in Sources */,
@@ -1790,6 +1817,7 @@
 				9004F50B1A94CBCF00A61312 /* _ConcreteRelatedEntity.m in Sources */,
 				9004F50C1A94CBCF00A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.m in Sources */,
 				9004F50D1A94CBCF00A61312 /* SingleEntityWithNoRelationships.m in Sources */,
+				3E2FA3E11BD3F1C600830B92 /* _EntityForQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1832,6 +1860,7 @@
 				9004F5451A94CBF900A61312 /* NSManagedObjectContext+MagicalSavesTests.m in Sources */,
 				9004F5461A94CBF900A61312 /* SingleEntityRelatedToMappedEntityUsingDefaults.m in Sources */,
 				9004F5471A94CBF900A61312 /* _SingleEntityRelatedToMappedEntityUsingMappedPrimaryKey.m in Sources */,
+				3E2FA3E81BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */,
 				9004F5481A94CBF900A61312 /* ImportSingleRelatedEntityTests.m in Sources */,
 				9004F5491A94CBF900A61312 /* MagicalRecord+ActionsTests.m in Sources */,
 				9004F54A1A94CBF900A61312 /* NSManagedObject+MagicalRecordTests.m in Sources */,
@@ -1843,6 +1872,7 @@
 				9004F5501A94CBF900A61312 /* _ConcreteRelatedEntity.m in Sources */,
 				9004F5511A94CBF900A61312 /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.m in Sources */,
 				9004F5521A94CBF900A61312 /* SingleEntityWithNoRelationships.m in Sources */,
+				3E2FA3E21BD3F1C700830B92 /* _EntityForQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2041,6 +2071,7 @@
 				902CE13918F61E410024F47C /* NSManagedObjectContext+MagicalSavesTests.m in Sources */,
 				9099495917C2F42100BC2B5C /* SingleEntityRelatedToMappedEntityUsingDefaults.m in Sources */,
 				9099494517C2F42100BC2B5C /* _SingleEntityRelatedToMappedEntityUsingMappedPrimaryKey.m in Sources */,
+				3E2FA3E91BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */,
 				90BB1C3F1864F662001BBFBB /* ImportSingleRelatedEntityTests.m in Sources */,
 				902CE12C18F61A2F0024F47C /* MagicalRecord+ActionsTests.m in Sources */,
 				90AA771818F79A3300D49377 /* NSManagedObject+MagicalRecordTests.m in Sources */,
@@ -2052,6 +2083,7 @@
 				9099493B17C2F42100BC2B5C /* _ConcreteRelatedEntity.m in Sources */,
 				9099495717C2F42100BC2B5C /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.m in Sources */,
 				9099496117C2F42100BC2B5C /* SingleEntityWithNoRelationships.m in Sources */,
+				3E2FA3E31BD3F1C800830B92 /* _EntityForQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2094,6 +2126,7 @@
 				902CE13A18F61E410024F47C /* NSManagedObjectContext+MagicalSavesTests.m in Sources */,
 				9099495A17C2F42100BC2B5C /* SingleEntityRelatedToMappedEntityUsingDefaults.m in Sources */,
 				9099494617C2F42100BC2B5C /* _SingleEntityRelatedToMappedEntityUsingMappedPrimaryKey.m in Sources */,
+				3E2FA3EA1BD3F63F00830B92 /* EntityForQueryBuilder.m in Sources */,
 				90BB1C401864F662001BBFBB /* ImportSingleRelatedEntityTests.m in Sources */,
 				902CE12D18F61A2F0024F47C /* MagicalRecord+ActionsTests.m in Sources */,
 				90AA771918F79A3300D49377 /* NSManagedObject+MagicalRecordTests.m in Sources */,
@@ -2105,6 +2138,7 @@
 				9099493C17C2F42100BC2B5C /* _ConcreteRelatedEntity.m in Sources */,
 				9099495817C2F42100BC2B5C /* SingleEntityRelatedToManyMappedEntitiesUsingMappedPrimaryKey.m in Sources */,
 				9099496217C2F42100BC2B5C /* SingleEntityWithNoRelationships.m in Sources */,
+				3E2FA3E41BD3F1CA00830B92 /* _EntityForQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,6 @@
 #import "MagicalRecordTestBase.h"
 #import "SingleEntityWithNoRelationships.h"
 
-#import <MagicalRecord/MagicalRecord.h>
-
 @interface QueryBuilderTests : MagicalRecordTestBase
 
 @end
@@ -19,64 +17,19 @@
 
 #pragma mark - 
 
-//- (void)testSaveToSelfOnlyWhenSaveIsSynchronous
-//{
-//    NSManagedObjectContext *parentContext = [NSManagedObjectContext MR_defaultContext];
-//    NSManagedObjectContext *childContext = [NSManagedObjectContext MR_contextWithParent:parentContext];
-//    
-//    XCTestExpectation *childContextSavedExpectation = [self expectationWithDescription:@"Child Context Did Save"];
-//    
-//    __block NSManagedObjectID *insertedObjectID;
-//    
-//    [childContext performBlockAndWait:^{
-//        SingleEntityWithNoRelationships *insertedObject = [SingleEntityWithNoRelationships MR_createEntityInContext:childContext];
-//        
-//        expect([insertedObject hasChanges]).to.beTruthy();
-//        
-//        NSError *obtainIDsError;
-//        BOOL obtainIDsResult = [childContext obtainPermanentIDsForObjects:@[insertedObject] error:&obtainIDsError];
-//        
-//        expect(obtainIDsResult).to.beTruthy();
-//        expect(obtainIDsError).to.beNil();
-//        
-//        insertedObjectID = [insertedObject objectID];
-//        
-//        expect(insertedObjectID).toNot.beNil();
-//        expect([insertedObjectID isTemporaryID]).to.beFalsy();
-//        
-//        [childContext MR_saveOnlySelfAndWait];
-//        
-//        [childContextSavedExpectation fulfill];
-//    }];
-//    
-//    [self waitForExpectationsWithTimeout:5.0f handler:nil];
-//    
-//    XCTestExpectation *parentContextSavedExpectation = [self expectationWithDescription:@"Parent Context Did Save"];
-//    childContextSavedExpectation = [self expectationWithDescription:@"Child Context Did Save"];
-//    
-//    [parentContext performBlockAndWait:^{
-//        NSManagedObject *parentContextFetchedObject = [parentContext objectRegisteredForID:insertedObjectID];
-//        
-//        // Saving a child context moves the saved changes up to the parent, but does
-//        //  not save them, leaving the parent context with changes
-//        expect(parentContextFetchedObject).toNot.beNil();
-//        expect([parentContextFetchedObject hasChanges]).to.beTruthy();
-//        
-//        [childContext performBlockAndWait:^{
-//            NSManagedObject *childContextFetchedObject = [childContext objectRegisteredForID:insertedObjectID];
-//            
-//            // The child context should not have changes after the save
-//            expect(childContextFetchedObject).toNot.beNil();
-//            expect([childContextFetchedObject hasChanges]).to.beFalsy();
-//            
-//            [childContextSavedExpectation fulfill];
-//        }];
-//        
-//        [parentContextSavedExpectation fulfill];
-//    }];
-//    
-//    [self waitForExpectationsWithTimeout:5.0f handler:nil];
-//}
+- (void)testSaveToSelfOnlyWhenSaveIsSynchronous
+{
+    
+
+    NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+    ALManagedObjectFactory *factory = [[ALManagedObjectFactory alloc] initWithManagedObjectContext:context];
+    
+    SingleEntityWithNoRelationships *insertedObject =
+    (SingleEntityWithNoRelationships*)[SingleEntityWithNoRelationships MR_createWithFields:@{@"stringTestAttribute" : @"test"} usingFactory:factory];
+
+    expect(insertedObject).notTo.beNil();
+    expect(insertedObject.stringTestAttribute).equal(@"test");
+}
 
 
 

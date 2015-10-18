@@ -34,8 +34,7 @@
 
 @implementation NSManagedObject (Create)
 
-+ (NSManagedObject*)createWithFields:(NSDictionary*)fields
-                        usingFactory:(ALManagedObjectFactory*)factory
++ (NSManagedObject*)MR_createWithFields:(NSDictionary*)fields usingFactory:(ALManagedObjectFactory*)factory
 {
     NSString *entityName = [self MR_entityName];
     NSManagedObject *object = [factory createObjectForEntityName:entityName];
@@ -53,15 +52,31 @@
 
 @implementation NSManagedObject (FetchRequestSingleton)
 
-+ (ALFetchRequest*)all
++ (ALFetchRequest*)MR_all
 {
     NSManagedObjectContext *managedObjectContext = [NSManagedObjectContext MR_defaultContext];
     return [self MR_fetchRequestWithManagedObjectContext:managedObjectContext];
 }
 
-+ (ALFetchRequest*)fetch
++ (ALFetchRequest*)MR_fetch
 {
-    return [self all];
+    return [self MR_all];
+}
+
+@end
+
+
+@implementation NSManagedObject (CreateSingleton)
+
++ (NSManagedObject*)MR_createWithFields:(NSDictionary*)fields
+{
+    ALManagedObjectFactory *factory = [ALManagedObjectFactory defaultFactory];
+    return [self MR_createWithFields:fields usingFactory:factory];
+}
+
++ (NSManagedObject *)MR_create
+{
+    return [self MR_createWithFields:nil];
 }
 
 @end

@@ -48,8 +48,7 @@
  
  Example above returns object of class Item.
  */
-+ (NSManagedObject*)createWithFields:(NSDictionary*)fields
-                        usingFactory:(ALManagedObjectFactory*)factory;
++ (NSManagedObject*)MR_createWithFields:(NSDictionary*)fields usingFactory:(ALManagedObjectFactory*)factory;
 
 @end
 
@@ -67,7 +66,7 @@
  
  Example above collects all @b Items orderd by @em title.
  */
-+ (ALFetchRequest*)all;
++ (ALFetchRequest*)MR_all;
 
 /**
  Fetch request for query builder. Synonim for `all' method.
@@ -78,7 +77,7 @@
  @endcode
  
  */
-+ (ALFetchRequest*)fetch;
++ (ALFetchRequest*)MR_fetch;
 
 @end
 
@@ -96,7 +95,7 @@
  
  Example above returns object of class Item. For building defaultFactory is used.
  */
-+ (NSManagedObject*)create;
++ (NSManagedObject*)MR_create;
 
 /**
  A class method for creating new entities.
@@ -112,6 +111,6 @@
  
  Example above returns object of class Item. For building defaultFactory is used.
  */
-+ (NSManagedObject*)createWithFields:(NSDictionary*)fields;
++ (NSManagedObject*)MR_createWithFields:(NSDictionary*)fields;
 
 @end
