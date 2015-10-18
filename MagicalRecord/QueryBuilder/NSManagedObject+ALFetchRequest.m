@@ -10,6 +10,11 @@
 #import "NSManagedObject+Helper.h"
 #import "ALFetchRequest.h"
 
+#import "NSManagedObject+MagicalRecord.h"
+#import "ALManagedObjectFactory.h"
+
+#import "NSManagedObjectContext+MagicalRecord.h"
+
 @implementation NSManagedObject (ALFetchRequest)
 
 + (ALFetchRequest*)MR_fetchRequestWithManagedObjectContext:(NSManagedObjectContext*)managedObjectContext
@@ -23,6 +28,40 @@
 	[fetchRequest setIncludesPendingChanges:YES];
 	
 	return fetchRequest;
+}
+
+@end
+
+@implementation NSManagedObject (Create)
+
++ (NSManagedObject*)createWithFields:(NSDictionary*)fields
+                        usingFactory:(ALManagedObjectFactory*)factory
+{
+    NSString *entityName = [self MR_entityName];
+    NSManagedObject *object = [factory createObjectForEntityName:entityName];
+    
+    for (NSString *key in fields) {
+        id value = [fields valueForKey:key];
+        [object setValue:value
+                  forKey:key];
+    }
+    return object;
+}
+
+@end
+
+
+@implementation NSManagedObject (FetchRequestSingleton)
+
++ (ALFetchRequest*)all
+{
+    NSManagedObjectContext *managedObjectContext = [NSManagedObjectContext MR_defaultContext];
+    return [self MR_fetchRequestWithManagedObjectContext:managedObjectContext];
+}
+
++ (ALFetchRequest*)fetch
+{
+    return [self all];
 }
 
 @end

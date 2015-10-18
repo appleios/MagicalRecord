@@ -47,4 +47,4 @@ FOUNDATION_EXPORT const unsigned char MagicalRecordVersionString[];
 
 #import <MagicalRecord/NSManagedObject+ALFetchRequest.h>
 #import <MagicalRecord/ALFetchRequest+QueryBuilder.h>
-
+#import <MagicalRecord/ALManagedObjectFactory.h>

@@ -8,6 +8,7 @@
 
 #import <CoreData/CoreData.h>
 #import "ALFetchRequest.h"
+#import "ALManagedObjectFactory.h"
 
 typedef enum : NSUInteger {
     MR_SUM,

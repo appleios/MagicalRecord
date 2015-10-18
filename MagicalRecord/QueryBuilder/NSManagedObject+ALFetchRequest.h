@@ -9,6 +9,7 @@
 #import <CoreData/CoreData.h>
 
 @class ALFetchRequest;
+@class ALManagedObjectFactory;
 
 @interface NSManagedObject (ALFetchRequest)
 
@@ -27,5 +28,90 @@
  Example above collects all @b Items orderd by @em title.
  */
 + (ALFetchRequest*)MR_fetchRequestWithManagedObjectContext:(NSManagedObjectContext*)managedObjectContext;
+
+@end
+
+
+@interface NSManagedObject (Create)
+
+/**
+ A class method for creating new entities.
+ 
+ @returns Returns en entity from caller's class name and intialized accroding to given dictionary.
+ 
+ @code
+ Item *item = [Item createWithFields:@{
+ @"title":@"ABC",
+ @"price":@(100)
+ }];
+ @endcode
+ 
+ Example above returns object of class Item.
+ */
++ (NSManagedObject*)createWithFields:(NSDictionary*)fields
+                        usingFactory:(ALManagedObjectFactory*)factory;
+
+@end
+
+@interface NSManagedObject (FetchRequestSingleton)
+
+/**
+ Fetch request for query builder. Lets you build a query.
+ 
+ @returns Returns fetch request which is used for quiery building.
+ 
+ @code
+ NSArray *items =
+ [[[Item all] orderBy:@[@"title"]] execute];
+ @endcode
+ 
+ Example above collects all @b Items orderd by @em title.
+ */
++ (ALFetchRequest*)all;
+
+/**
+ Fetch request for query builder. Synonim for `all' method.
+ 
+ @code
+ NSArray *items =
+ [[[Item fetch] orderBy:@[@"title"]] execute];
+ @endcode
+ 
+ */
++ (ALFetchRequest*)fetch;
+
+@end
+
+
+@interface NSManagedObject (CreateSingleton)
+
+/**
+ A class method for creating new entities.
+ 
+ @returns Returns en entity from caller's class name.
+ 
+ @code
+ Item *item = [Item create];
+ @endcode
+ 
+ Example above returns object of class Item. For building defaultFactory is used.
+ */
++ (NSManagedObject*)create;
+
+/**
+ A class method for creating new entities.
+ 
+ @returns Returns en entity from caller's class name and intialized accroding to given dictionary.
+ 
+ @code
+ Item *item = [Item createWithFields:@{
+ @"title":@"ABC",
+ @"price":@(100)
+ }];
+ @endcode
+ 
+ Example above returns object of class Item. For building defaultFactory is used.
+ */
++ (NSManagedObject*)createWithFields:(NSDictionary*)fields;
 
 @end
